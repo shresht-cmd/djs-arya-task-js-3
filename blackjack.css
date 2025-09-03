@@ -1,0 +1,100 @@
+/* Background around the table */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.casino-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: radial-gradient(circle at center, #0d0d0d 60%, #000 100%);
+}
+
+/* Poker table */
+.table {
+  background: radial-gradient(circle at center, #1c7c3c 0%, #145a2b 80%);
+  border: 12px solid #3d1e0f;
+  border-radius: 50%;
+  width: 700px;
+  height: 500px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+
+.game-title {
+  font-size: 2rem;
+  margin: 0;
+  color: gold;
+  text-shadow: 0 0 10px #000, 0 0 20px #ffd700;
+}
+
+.section {
+  margin: 10px 0;
+}
+
+#dealer-cards, #your-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+#dealer-cards img, #your-cards img {
+  height: 120px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
+}
+#dealer-cards img:hover, #your-cards img:hover {
+  transform: scale(1.05);
+}
+
+
+.controls {
+  margin: 10px 0;
+}
+
+.btn {
+  background: linear-gradient(145deg, #ffd700, #ffb300);
+  color: #222;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 22px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(145deg, #ffe566, #ffcc00);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.8);
+}
+
+.btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+#results {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 12px;
+  text-shadow: 0 0 10px #000;
+}
